@@ -1,0 +1,28 @@
+svg {
+    font-size: 10vw;
+    font-family: 'Chakra Petch', sans-serif;
+    position: absolute; 
+    width: 100%; height: 100%;
+    pointer-events:none;
+  }
+  svg text {
+    text-transform: uppercase;
+    animation: stroke 2s forwards;
+    stroke-width: 2;
+    stroke: #ffbb5c;
+    font-size: 140px;
+  }
+  @keyframes stroke {
+    0%   {
+      fill: rgba(72,138,20,0); stroke: #ffbb5c;
+      stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: rgba(72,138,20,0); stroke: #ffbb5c; }
+    80%  {fill: rgba(72,138,20,0); stroke: #ffbb5c; stroke-width: 3; }
+    100% {
+      fill: #ffbb5c; stroke: rgba(160, 121, 54, 0); 
+      stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+      text-shadow: #ffbb5c 0px 0 20px;
+    }
+
+  }

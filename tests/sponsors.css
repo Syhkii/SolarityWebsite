@@ -1,0 +1,148 @@
+#sponsors-tiers {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+#dmt {
+    width: 20vw;
+    position: absolute;
+    left: 40vw;
+    bottom: 57vh;
+}
+
+#plan {
+    width: 80vw;
+    height: 30vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.platinium,
+.gold,
+.tier {
+    border: solid;
+    border-width: 3px;
+    width: 18vw;
+    height: 35vh;
+    margin-right: 4vw;
+    border-radius: 10px;
+    opacity: 0.8;
+    border-color: #b4d5ff;
+    transition: transform .5s; /* Animation */
+}
+
+.platinium:hover {
+    box-shadow: 0px 0px 30px 4px #b4d5ff;
+    opacity: 1;
+    border-color: #b4d5ff;
+    transform: scale(1.02);
+}
+
+.gold {
+    border-color: #fce488;
+}
+.gold:hover {
+    border-color: #fce488;
+    transform: scale(1.02);
+}
+.tier {
+    border-color: #636363;
+}
+.tier:hover {
+    border-color: #636363;
+    transform: scale(1.02);
+}
+#plan-title {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+#logo-onshape {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 5vw;
+}
+#text-onshape {
+    display: block;
+    margin: 0 auto;
+    margin-right: 1vw;
+    width: 15vw;
+}
+
+#logo-dmt {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 5vw;
+}
+
+#text-dmt {
+    display: block;
+    margin: 0 auto;
+    width: 15vw;
+    margin-top: 2vh;
+}
+
+#logo-igus {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 10vw;
+}
+
+/* Media query for screens smaller than 1500px */
+@media screen and (max-width: 1500px) {
+    #sponsors-tiers {
+        width: 80vw; /* Set a specific width for mobile view */
+    }
+
+    #plan {
+        width: 80vw;
+        height: auto; /* Adjust height as needed for responsiveness */
+        flex-wrap: wrap; /* Allow flex items to wrap */
+    }
+
+    .platinium,
+    .gold,
+    .tier {
+        width: 80vw; /* Adjust the width for mobile view */
+        margin-right: 0; /* Remove margin for mobile view */
+        margin-bottom: 4vh; /* Add margin-bottom for separation */
+    }
+    #logo-onshape {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 20vw;
+    }
+    #text-onshape {
+        display: block;
+        margin: auto;
+        margin-right: 1vw;
+        width: 60vw;
+    }
+    
+    #logo-dmt {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 20vw;
+    }
+    
+    #text-dmt {
+        display: block;
+        margin: 0 auto;
+        width: 60vw;
+        margin-top: 2vh;
+    }
+    
+    #logo-igus {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 60vw;
+    }
+}

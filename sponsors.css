@@ -1,0 +1,171 @@
+#sponsors-tiers {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+#dmt {
+    width: 20vw;
+    position: absolute;
+    left: 40vw;
+    bottom: 57vh;
+}
+
+#plan {
+    margin-top: 10vh;
+    display: flex;
+}
+
+.GOLD {
+    width: 80vw;
+    height: 50vh;
+    border-style: solid;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-width: 5px;
+    border-color: #FFD95A;
+}
+.SILVER {
+    width: 80vw;
+    height: 50vh;
+    border-style: solid;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-width: 5px;
+    border-color: #8d8d8d;
+}
+.BRONZE {
+    width: 80vw;
+    height: 50vh;
+    border-style: solid;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-width: 5px;
+    border-color: #B87333;
+}
+
+.COPPER {
+    width: 80vw;
+    height: 50vh;
+    border-style: solid;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-width: 5px;
+    border-color: #B36700;
+}
+
+.tier {
+    border: solid;
+    border-width: 3px;
+    width: 18vw;
+    height: 35vh;
+    margin-right: 4vw;
+    border-radius: 10px;
+    border-color: #b4d5ff;
+    transition: transform .5s; /* Animation */
+}
+
+.tier {
+    border-color: #636363;
+}
+.tier:hover {
+    border-color: #636363;
+    transform: scale(1.02);
+}
+#plan-title {
+    font-size: 2.5vw;
+    margin-left: 4vw;
+    margin-top: -3vh;
+    background-color: black;
+    padding-left: 12px;
+    padding-right: 6px;
+    font-weight: bold;
+}
+
+#logo-onshape {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 5vw;
+}
+#text-onshape {
+    display: block;
+    margin: 0 auto;
+    margin-right: 1vw;
+    width: 15vw;
+}
+
+#logo-dmt {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 5vw;
+}
+
+#text-dmt {
+    display: block;
+    margin: 0 auto;
+    width: 15vw;
+    margin-top: 2vh;
+}
+
+#logo-igus {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 10vw;
+}
+
+/* Media query for screens smaller than 1500px */
+@media screen and (max-width: 700px) {
+    #sponsors-tiers {
+        width: 80vw; /* Set a specific width for mobile view */
+    }
+
+    #plan {
+        width: 80vw;
+        height: auto; /* Adjust height as needed for responsiveness */
+        flex-wrap: wrap; /* Allow flex items to wrap */
+    }
+
+    .platinium,
+    .gold,
+    .tier {
+        width: 80vw; /* Adjust the width for mobile view */
+        margin-right: 0; /* Remove margin for mobile view */
+        margin-bottom: 4vh; /* Add margin-bottom for separation */
+    }
+    #logo-onshape {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 20vw;
+    }
+    #text-onshape {
+        display: block;
+        margin: auto;
+        margin-right: 1vw;
+        width: 60vw;
+    }
+    
+    #logo-dmt {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 20vw;
+    }
+    
+    #text-dmt {
+        display: block;
+        margin: 0 auto;
+        width: 60vw;
+        margin-top: 2vh;
+    }
+    
+    #logo-igus {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 60vw;
+    }
+}

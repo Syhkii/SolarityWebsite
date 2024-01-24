@@ -1,0 +1,226 @@
+@keyframes bar {
+    0%   {width: 0vw;}
+    100% {width: 25vw;}
+}
+
+@keyframes icons {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#split-bar {
+    animation: bar 0.5s forwards;
+}
+
+#social-icons {
+    animation: icons 2s forwards;
+}
+
+/* Additional styling for the left side of the form */
+#contact-form-left {
+    text-align: center;
+}
+
+#contact-form-left h2 {
+    font-size: 24px;
+}
+
+#form-separator {
+    width: 80%;
+    margin: 10px auto;
+    border-bottom: 1px solid #ccc;
+}
+
+#form-title {
+    font-size: 4vw;
+    text-align: center;
+    font-weight: 700;
+    font-family: Roboto,sans-serif;
+    background-size: 200% auto;
+    background-color: #FFBB5C;
+    color: #000;
+    /* background-clip: text; */
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#social-icons img {
+    width: 40px; /* Adjust the width of the social media icons */
+    margin: 0 10px; /* Adjust the space between the icons */
+}
+
+#split-bar {
+    width: 25vw;
+    transform-origin: left center 0px;
+    margin-bottom: 5vh;
+    background-color: white;
+    height: 0.3vh;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px -120px 45px 4px #6f6f6e;
+}
+
+#social-icons a{
+    transition: transform .2s;
+    transform: scale(1);
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+iframe {
+    width: 35vw;
+    height: 35vw;
+    box-shadow: 0 0 10px 2px rgb(116, 116, 116);
+}
+
+#contact-info {
+    text-align: left;
+    margin-left: 3.5vw;
+}
+
+#contact-info p {
+    margin: 5vh;
+}
+
+#contact-us{
+    margin: 5vh;
+    font-size: 2vw;
+}
+
+#home-cont-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 90vh;
+}
+
+#contact-stuff {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: auto; 
+    width: 80vw;
+    margin-top: 6vh;
+}
+
+#contact-form {
+    width: 45%;
+    margin-top: 12vh;
+}
+
+/* Media query for screens smaller than 1500px */
+@media screen and (max-width: 650px) {
+    @keyframes bar {
+        0%   {width: 0;}
+        100% {width: 75vw;}
+    }
+    
+    @keyframes icons {
+        0%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    #home-cont-contact {
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 20px;
+    }
+
+    #contact-form {
+        width: 100%;
+        margin-top: 6vh;
+    }    
+    
+    #contact-stuff {
+        display: block;
+        padding: 20px;
+        margin: auto; 
+        width: 80vw;
+    }
+
+    #split-bar {
+        animation: bar 0.5s forwards;
+        width: 25%;
+        margin-bottom: 3vh;
+        background-color: white;
+        height: 0.3vh;
+        box-shadow: 0px -120px 45px 4px #6f6f6e;
+    }
+
+    #social-icons {
+        animation: icons 2s forwards;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    #social-icons img {
+        width: 35px;
+        margin: 0 6px;
+    }
+
+    #contact-form-left {
+        text-align: center;
+    }
+
+    #contact-form-left h2 {
+        font-size: 24px;
+    }
+
+
+    #form-separator {
+        width: 80%;
+        margin: 10px auto;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #form-title {
+        font-size: 15vw;
+        text-align: center;
+        font-weight: 700;
+        font-family: Roboto, sans-serif;
+    }
+
+    iframe {
+        width: 35%;
+        height: 35%;
+        margin-top: 20px;
+    }
+
+    #contact-info {
+        text-align: center;
+    }
+
+    #contact-info p {
+        margin-left: 2vw;
+    }
+
+    #contact-us {
+        font-size: 8vw;
+        margin: 0;
+    }
+    #map {
+        /* Example styles for the iframe */
+        width: 75vw;
+        height: 75vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    }
+    #map-cont{
+        display: flex;
+        justify-content: center;
+    }
+    footer {
+        display: none;
+    }
+}
